@@ -5,11 +5,19 @@
 #define DATA_H
 
 
-typedef struct
+typedef struct books
 {
     int studentId, bookId;
+    struct books* next;
 
 } Book;
+
+typedef struct req
+{
+    int studentId, bookId;
+    struct req* next;
+
+} requests;
 
 
 #endif
