@@ -9,6 +9,7 @@ int main () {
 
     printf("Moooo\n");
 
+    // Some testing code, ignore
     initFile();
 
     Book x = {123, 456};
