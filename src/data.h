@@ -9,16 +9,20 @@
 #ifndef DATA_H
 #define DATA_H
 
-typedef struct
+
+typedef struct books
 {
     int studentId, bookId;
+    struct books* next;
 
-} Listing;
+} Book;
 
-typedef struct
+typedef struct req
 {
-    int studentId, bookId
+    int studentId, bookId;
+    struct req* next;
 
-} Request;
+} requests;
+
 
 #endif
