@@ -4,13 +4,13 @@
 int showMainMenu () {
     int opCode = 5;
     printf(
-        "+--------------------------+"
-        "|  1) Show listings        |"
-        "|  2) Add book listing     |"
-        "|  3) Add book request     |"
-        "|  4) Check for matches    |"
-        "|  5) Exit                 |"
-        "+--------------------------+"
+        "+--------------------------+\n"
+        "|  1) Show listings        |\n"
+        "|  2) Add book listing     |\n"
+        "|  3) Add book request     |\n"
+        "|  4) Check for matches    |\n"
+        "|  5) Exit                 |\n"
+        "+--------------------------+\n"
         "Enter your choice: "
     );
 
