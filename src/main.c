@@ -1,6 +1,6 @@
 #include <stdio.h>
 
-#include "data.h"
+#include "data.c"
 #include "io.c"
 #include "ui.c"
 
@@ -9,20 +9,23 @@ int main () {
 
     printf(" --- Moooo! Welcome to P2P Book Exchange --- \n");
 
-    // Some testing code, ignore
-    initFile();
-
-    Book x = {123, 456};
-    storeBook(x);
+    // Some books are added here in a hardcoded way just to test display function.
+    Book* listings = NULL, *requests = NULL;
+    insertBook(&listings, createBook(456, 123));
+    insertBook(&listings, createBook(567, 234));
+    insertBook(&listings, createBook(567, 969));
+    insertBook(&listings, createBook(167, 696));
 
     int opCode;
 
     do {
         opCode = showMainMenu();
+        clearScreen();
+
         switch (opCode) {
             case 1:
-                // TODO: Show listings
                 printf(" Current listings:\n");
+                displayBooks(listings);
                 break;
             case 2:
                 // TODO: Add book listing
