@@ -17,12 +17,24 @@ typedef struct books
 
 } Book;
 
-typedef struct req
-{
-    int studentId, bookId;
-    struct req* next;
 
-} requests;
+/**
+ * @brief Create a node for the LL.
+ */
+Book* createBook (int studentId, int bookId);
 
+
+/**
+ * @brief
+ * Insert book into the LL.
+ * @param head
+ * Double pointer to the LL's head node.
+ * @param book
+ * Pointer to the book to insert.
+ */
+void insertBook (Book** head, Book* book);
+
+
+Book* matchExchange();
 
 #endif
